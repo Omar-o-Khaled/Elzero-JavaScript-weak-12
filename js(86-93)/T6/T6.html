@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T6</title>
+    <style>
+        body{
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .elmentsAdd{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            width: 90%;
+            margin-top: 60px;
+        }
+        .elmentsAdd .box{
+            width: 31%;
+            background-color: #FF5722;
+            font-size: 24px;
+            padding: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+        }
+        input,
+        select[ name="type"]{
+            width: 300px;
+            padding: 10px;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        select[ name="type"],
+        input[type="submit"]{
+            width: 100%;
+        }
+        input[type="submit"]{
+            color: white;
+            background: #0D47A1;
+            border: 0;
+
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+        <input type="text" name="texts" class="input" placeholder="Elements Text" />
+        <select name="type" class="input">
+            <option value="Div">Div</option>
+            <option value="Section">Section</option>
+        </select>
+        <input type="submit" name="create" value="Create" />
+        <div class="results"></div>
+    </form>
+
+    <script src="T6.js"></script>
+</body>
+</html>
